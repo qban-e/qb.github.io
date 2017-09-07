@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# Site settings
+title: 程相洪博客
+email: 程相洪@126.com
+description: > # this means to ignore newlines until "baseurl:"
+ qb 程的博客
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: qb.github.io/ # the base hostname & protocol for your site
+rss_url: /pages/feed.xml
+author: Su Yan
 
-You can use the [editor on GitHub](https://github.com/qban-e/qb.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
+recent_num: 20
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+# avatar and Favicon
+avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# disqus config
+disqus:
+  shortname: suyan-zh
 
-```markdown
-Syntax highlighted code block
+# Build settings
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/qban-e/qb.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
